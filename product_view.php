@@ -28,9 +28,9 @@ if (isset($_GET['products'])) {
             <div class="container mt-4">
                 <div class="row">
                     <div class="col-md-4">
-                       <div class="shadow">
-                         <img src="./uploads/<?= $products['image']; ?>" alt="Products Image">
-                       </div>
+                        <div class="shadow">
+                            <img src="./uploads/<?= $products['image']; ?>" alt="Products Image">
+                        </div>
                     </div>
                     <div class="col-md-8">
                         <h4><?= $products['name']; ?></h4>
@@ -54,6 +54,15 @@ if (isset($_GET['products'])) {
                             </div>
                             <div class="col-md-6">
                                 <button class="btn btn-primary">wishlist</button>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <div class="input-group mb-3" style="width:110px">
+                                    <button class="input-group-text decrement-btn">-</button>
+                                    <input type="text" class="form-control text-center bg-white input-qty" value="1" disabled>
+                                    <button class="input-group-text increment-btn">+</button>
+                                </div>
                             </div>
                         </div>
                     </div>
